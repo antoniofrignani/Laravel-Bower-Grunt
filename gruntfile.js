@@ -81,12 +81,17 @@ module.exports = function(grunt) {
 					'public/script.min.js': ['assets/tmp/concat.js']
 				}
 			}
+		},
+
+		watch: {
+			files: ['assets/less/**/*.less', 'app/views/**/*'],
+			tasks: ['default']
 		}
 
 	});
 
 	 grunt.loadNpmTasks('grunt-contrib-less');
-	 // grunt.loadNpmTasks('grunt-contrib-watch');
+	 grunt.loadNpmTasks('grunt-contrib-watch');
 	 grunt.loadNpmTasks('grunt-contrib-cssmin');
 	 grunt.loadNpmTasks('grunt-contrib-copy');
 	 grunt.loadNpmTasks('grunt-contrib-clean');
