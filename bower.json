@@ -1,0 +1,9 @@
+{
+    "name": "laravel-bower-grunt",
+    "version": "0.0.1",
+    "dependencies": {
+        "bootstrap":"~3",
+        "font-awesome": "~3",
+        "jquery": "~1"
+    }
+}
